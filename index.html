@@ -1,1 +1,185 @@
-<h1>alvinttang</h1>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Alvin Tang — Founder @ AlvinClub.ai. Production AI systems, agent safety, infrastructure. Cortex Memory, Universal Message Hub, Piano, Chess."
+    />
+    <meta name="theme-color" content="#05070A" />
+    <title>Alvin Tang — Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <header class="sysbar" role="banner">
+      <div class="sysbar-left">
+        <span class="dot" aria-hidden="true"></span>
+        <span>SYS <b data-sys-status>ONLINE</b></span>
+        <span class="hide-sm">NODE <b>personal</b></span>
+        <span class="hide-sm">REGION <b>sg</b></span>
+      </div>
+      <div class="sysbar-right">
+        <span class="hide-sm">UTC <b id="clock">--:--:--</b></span>
+        <button type="button" class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          THEME · DARK
+        </button>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero reveal" aria-labelledby="hero-title">
+        <div class="meta">
+          <span>ID <b>alvin.tang</b></span>
+          <span>ROLE <b>founder</b></span>
+          <span>ORG <b>AlvinClub.ai</b></span>
+          <span>FOCUS <b>production AI systems</b></span>
+        </div>
+        <h1 id="hero-title" class="display">Build systems that stay up.</h1>
+        <p class="tagline">
+          Production AI infrastructure, agent memory, and tools people actually run.
+          Not demos — systems that ship and keep running.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.alvinsclub.ai" target="_blank" rel="noopener noreferrer"
+            >AlvinClub →</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/alvinttang"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a class="btn btn-secondary" href="#systems">Systems</a>
+        </div>
+      </section>
+
+      <section id="systems" class="section reveal" aria-labelledby="systems-title">
+        <div class="section-label">01 · Systems</div>
+        <h2 id="systems-title">Selected systems</h2>
+        <p class="lead">Four public surfaces. Everything else stays internal.</p>
+
+        <div class="projects">
+          <a
+            class="project"
+            href="https://github.com/gambletan/cortex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="status"><span class="dot" aria-hidden="true"></span> oss · memory</div>
+            <h3>Cortex Memory</h3>
+            <p>
+              On-device memory for AI agents. Private, local, MCP-native — data never leaves your
+              machine.
+            </p>
+            <div class="foot">
+              <span class="badge live">OSS</span>
+              <span>github · demo</span>
+            </div>
+          </a>
+
+          <a
+            class="project"
+            href="https://github.com/gambletan/unified-channel-hub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="status"><span class="dot" aria-hidden="true"></span> oss · messaging</div>
+            <h3>Universal Message Hub</h3>
+            <p>
+              IM, Email, Voice, Calendar, IoT in one embeddable API for personal AI assistants.
+            </p>
+            <div class="foot">
+              <span class="badge live">OSS</span>
+              <span>unified-channel</span>
+            </div>
+          </a>
+
+          <a
+            class="project"
+            href="https://bp.alvinclub.xyz/piano/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="status"><span class="dot" aria-hidden="true"></span> product · piano</div>
+            <h3>Piano · 小琴童</h3>
+            <p>
+              On-device piano transcription + AI coach. iPhone Safari, local analysis, live on SG
+              edge.
+            </p>
+            <div class="foot">
+              <span class="badge live">LIVE</span>
+              <span>/piano</span>
+            </div>
+          </a>
+
+          <a
+            class="project"
+            href="https://bp.alvinclub.xyz/chess/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="status"><span class="dot" aria-hidden="true"></span> product · chess</div>
+            <h3>Chess · 星际棋手</h3>
+            <p>
+              Kid-friendly AI chess coach — space theme, progression, coach that grows with the
+              child.
+            </p>
+            <div class="foot">
+              <span class="badge live">LIVE</span>
+              <span>/chess</span>
+            </div>
+          </a>
+        </div>
+
+        <p class="systems-extra">
+          <a href="https://gambletan.github.io/cortex/" target="_blank" rel="noopener noreferrer"
+            >Cortex browser demo →</a
+          >
+        </p>
+      </section>
+
+      <section class="section reveal" aria-labelledby="stack-title">
+        <div class="section-label">02 · Stack</div>
+        <h2 id="stack-title">How I work</h2>
+        <p class="lead">
+          Ship production paths first: edge deploys, real users, measurable failure modes. Open
+          source what should be private by design.
+        </p>
+        <ul class="stack-list">
+          <li><span class="k">Memory</span><span class="v">Cortex — local-first agent memory</span></li>
+          <li>
+            <span class="k">Messaging</span
+            ><span class="v">Universal Message Hub — adapters you embed</span>
+          </li>
+          <li><span class="k">Edge</span><span class="v">SG · bp.alvinclub.xyz live products</span></li>
+          <li><span class="k">Focus</span><span class="v">Production AI · agent safety · infra</span></li>
+        </ul>
+      </section>
+
+      <footer class="footer reveal">
+        <div class="footer-row">
+          <span class="mono">alvin.tang · systems console</span>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="https://www.alvinsclub.ai" target="_blank" rel="noopener noreferrer">AlvinClub</a>
+            <a href="https://github.com/alvinttang" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://bp.alvinclub.xyz/piano/" target="_blank" rel="noopener noreferrer">Piano</a>
+            <a href="https://bp.alvinclub.xyz/chess/" target="_blank" rel="noopener noreferrer">Chess</a>
+          </nav>
+        </div>
+        <p class="colophon">Built dark-first. Other systems stay internal.</p>
+      </footer>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
